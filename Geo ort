@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+double geometrikOrtalama(double sayi1, double sayi2) {
+    return sqrt(sayi1 * sayi2);
+}
+
+int main() {
+    double sayi1, sayi2;
+
+    printf("Birinci sayıyı girin: ");
+    scanf("%lf", &sayi1);
+
+    printf("İkinci sayıyı girin: ");
+    scanf("%lf", &sayi2);
+    
+    double geoOrtalama = geometrikOrtalama(sayi1, sayi2);
+
+    printf("Geometrik Ortalama: %lf\n", geoOrtalama);
+
+    return 0;
+}
