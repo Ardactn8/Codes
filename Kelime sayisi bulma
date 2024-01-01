@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+	char metin[200];
+	int sayac=1,i;
+	printf("bir metin giriniz:\n");
+	gets(metin);
+	for(i=0;metin[i]!='\0';i++){
+		if(metin[i]==' '&& metin[i+1]!=' '){
+			sayac++;
+		}
+	}
+	printf("%d kelime var",sayac);
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
