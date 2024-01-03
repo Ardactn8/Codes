@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<conio.h>
+
+float kombinasyon(int x)
+{
+int k=1;
+
+for(int i=1;i<(x+1);i++)
+{	
+k=k*i;	
+}
+return (k);
+}
+
+
+
+int main()
+{
+int n,r;
+float komb;
+
+printf("c(n,r) olmak uzere\n");
+
+printf("n sayisini giriniz\n");
+scanf("%d",&n);
+
+printf("r sayisini giriniz\n");
+scanf("%d",&r);
+
+
+komb=kombinasyon(n)/(kombinasyon(r)*kombinasyon(n-r));
+
+
+printf("%f",komb);
+
+
+
+
+
+
+return 0;
+}
